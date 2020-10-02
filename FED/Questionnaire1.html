@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionnaire</title>
+    <style>
+        .questionnaire {
+            border: 3px solid rgb(80, 182, 13);
+            border-radius: 15px;
+            padding: 20px;
+            width: 400px;
+            margin: 0 auto;
+            margin-top: 50px;
+        }
+        .answer1 {
+            margin-top: 4%;
+        }
+        .answer1, .answer2 {
+            padding: 2.5% 0;
+        }
+        .answer1--1 {
+            /* background-color: aqua;*/
+            /* border: 3px solid rgb(20, 129, 38); */            
+            padding: 1%;
+            font-size: 14pt;      
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .answer1--1:hover {
+            /* color:rgb(22, 241, 14); */
+            background-color: aqua;
+            border: 3px solid rgb(20, 129, 38);
+            border-radius: 7px;
+            padding: 1% 3% 1% 1%
+        }
+        .answer2--2 {                     
+            padding: 5px;
+            font-size: 14pt;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .answer2--2:hover {
+            /* color:rgb(243, 12, 12); */
+            border: 4px solid rgb(109, 108, 108);
+            background-color: rgb(255, 38, 0);
+            border-radius: 7px;
+        }
+        .question { 
+            margin-top: 0px;           
+            font-size: 20pt;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }     
+        .submit1 {            
+            border-radius: 10px;
+            font-family: sans-serif;
+            padding: 10px;
+            margin-top: 0;
+            font-size: 13pt;
+        }        
+        .link {
+            padding-top: 15px;
+            font-size: 13pt;
+            text-align: right;
+            font-family: sans-serif;
+        } 
+        .link1 {
+            text-decoration: none;
+        }
+        .link1:hover {
+            border-bottom: 3px solid yellowgreen;
+        }
+        textarea {
+            margin-top: 3%;
+            resize: none;
+            font-size: 14pt;
+            border-radius: 10px;
+            padding: 10px;
+            background-color: rgb(197, 248, 255);
+            width: 90%;
+        }        
+    </style>
+</head>
+<body>       
+    <form class="questionnaire" action="#">
+        <div class="question">
+            <label><b>А Вы бы сортировали бытовые отходы у себя дома?</b></label>
+        </div>
+        <div class="answer1">
+            <label class="answer1--1"><input type="radio" name="answer" value="v1">Да</label>
+        </div>
+        <div class="answer2">
+            <label class="answer2--2"><input type="radio" name="answer" value="v2">Нет.</label>
+        </div>
+        <div>
+            <label>
+                <textarea name="your turn" id="v1" rows="5" placeholder="Ваш вариант ответа"></textarea>
+            </label>
+        </div>
+        <div class="submit1">
+            <input type="submit" class="submit1">
+        </div>
+        <div class="link">
+            <a href="https://nowaste.com.ua/" class="link1"><--Вам сюда --></a>
+        </div>
+    </form>
+</body>
+</html>
